@@ -18,13 +18,13 @@
       <!-- 4) Search any image on Google and output it here by binding the "src" attribute -->
       <div>
         <img
-          v-bind:src="'https://pbs.twimg.com/profile_images/1244493550479454209/ysPghQFb_400x400.jpg'"
+          :src="'https://pbs.twimg.com/profile_images/1244493550479454209/ysPghQFb_400x400.jpg'"
           style="width: 100px; height: 100px;"
         />
       </div>
       <!-- 5) Pre-Populate this input with your name (set the "value" attribute) -->
       <div>
-        <input type="text" value="Daniel Otieno" />
+        <input type="text" v-model="inputValue" />
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
